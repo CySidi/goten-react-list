@@ -1,0 +1,17 @@
+language: node_js
+sudo: false
+node_js:
+- '8'
+install:
+- npm install
+script:
+- npm test
+deploy:
+  provider: npm
+  email: $NPM_EMAIL
+  api_key:
+    secure: lBgub9jSmE5h00p0zEp9nONmmt0hYxOrak6bHxGRE2KwQgZRlPXopYtVKlkLZ8mvtEWv9tsnTsnQ/cu73flPWFqB1w6z2wSkCiffkmhZXKMXiMYQ7ITXYjRAnJvyQr6lbcOUH9zZFYewYVBSfFjKu7c+ib/6P5ejxL58y8SbQgsd2CjAgRCXfXE/Mmsum3jZu02EA7bYHMm4G2JC/fGf9KfyXNYonn07npTeYTFiT4oqCWj3ZyCPEo8U6pQZpZj/E+e9SGWZIN4FDQanLCB8ZkxTdmK+GN2ATLV+cge/S/YHHuCLOpXjGptt2KEbstmqaI4nEblVlrbdzYIZgNpyCgHcP+yr1MguMpcZrG7owUiBx9Q6vXmZaRVBpDSN9wsKr/Nc/lEfCsPj2E9WzobsPnplpR1hHdOKrUVGtmbfNp/FHm6xBw9c0tOtzPYfAhJdmC7+rfKZH3CBpeS/RK6OhEVOgw4zw7Jpy5RAS6+NdX/IkTldgvWG0ttTOY1s2WoSmSkc1bOeVRm99+43qRhi4WjR6kPeV5/l6/eOduYlHsnq9qDLishL+I1LMN/YWDzkVqGCzn54IX8yDvgs4rXMphNIiJYF/lExVN/oviBTW4mY451Tp+EgYDnv/qk6Njlq3TGQaNRme/juYfbHQv68Jlv9jxGmP8uKvViKjPPNZdk=
+  tags: true
+  skip_cleanup: true
+  on:
+    branch: master
