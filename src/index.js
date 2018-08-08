@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import PropTypes from 'prop-types'
+
 import Table from 'react-bootstrap/lib/Table'
 import Glyphicon from 'react-bootstrap/lib/Glyphicon'
 import Button from 'react-bootstrap/lib/Button'
@@ -125,4 +127,12 @@ export class GotenList extends Component {
             )
         })
     }
+}
+
+GotenList.propTypes = {
+    actionsTitle: PropTypes.string,
+    onEdit: PropTypes.func,
+    onSearch: PropTypes.func,
+    onRemove: PropTypes.func,
+    title: PropTypes.string
 }
