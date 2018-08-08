@@ -64,23 +64,27 @@ export class GotenList extends Component {
         )
     }
     
+    getItemList() {
+        return this.state.items
+    }
+
     _removeItem = async (item) => {
         if (item.onRemove)
-            item.onRemove()
+            item.onRemove(item.item)
         else if (this.props.onRemove)
-            this.props.onRemove()
+            this.props.onRemove(item.item)
         this.setState(prevState => ({
             items: [...prevState.items.filter(prevItem => prevItem.key !== item.key)]
         }))
     }
 
-    _getOneAction(logic, name) {
+    _getOneAction(item, logic, name) {
         return (
             <th>
                 { logic &&
                 <Button
                     bsClass='button-icon'
-                    onClick={logic}
+                    onClick={_ => logic(item)}
                 >
                     <Glyphicon glyph={name} />
                 </Button>
@@ -95,12 +99,12 @@ export class GotenList extends Component {
                 <tbody>
                     <tr>
                         {item.onSearch ?
-                            this._getOneAction(item.onSearch, 'search')
-                            : this._getOneAction(this.props.onSearch, 'search')}
+                            this._getOneAction(item.item, item.onSearch, 'search')
+                            : this._getOneAction(item.item, this.props.onSearch, 'search')}
                         {item.onEdit ?
-                            this._getOneAction(item.onEdit, 'pencil')
-                            : this._getOneAction(this.props.onEdit, 'pencil')}
-                        {this._getOneAction(_ => this._removeItem(item), 'trash')}
+                            this._getOneAction(item.item, item.onEdit, 'pencil')
+                            : this._getOneAction(item.item, this.props.onEdit, 'pencil')}
+                        {this._getOneAction(item.item, _ => this._removeItem(item), 'trash')}
                     </tr>
                 </tbody>
             </table>

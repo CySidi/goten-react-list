@@ -12,11 +12,11 @@ export default class ExampleGotenList extends Component {
     render() {
         return (
             <div className='example-goten-list'>
-                <GotenList 
+                <GotenList
                     title='All components'
                     actionsTitle='Actions actives'
-                    //onEdit={_=> null}
-                    onSearch={_ => null}
+                    //onEdit={component => console.log(component)}
+                    onSearch={component => console.log(component)}
                     ref={gotenListRef}
                 />
                 <div className='buttons'>
@@ -26,7 +26,7 @@ export default class ExampleGotenList extends Component {
                         onClick={_ => {
                             this.refs[gotenListRef].addItem(
                             <label>
-                                Component
+                                    Component
                             </label>
                             )
                         }}
@@ -38,8 +38,10 @@ export default class ExampleGotenList extends Component {
                             this.refs[gotenListRef].addItem(
                             <label>
                                 Component
-                            </label>
-                            , {onEdit: _ => null})
+                            </label>, {
+                                onEdit: component => console.log(component),
+                                onRemove: component => console.log(component)
+                            })
                         }}
                     />
                     <input
@@ -61,7 +63,7 @@ export default class ExampleGotenList extends Component {
                             <label>
                                 Component
                             </label>
-                            , 5, {onEdit: _ => null})
+                            , 5, {onEdit: component => console.log(component)})
                         }}
                     />
                     <input
