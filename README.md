@@ -17,25 +17,89 @@
 
 ## Usage
 
+``` jsx
+var GotenList = require('goten-react-list').GotenForm; // ES5
+ 
+import { GotenList } from 'goten-react-list'; // ES6
 
+...
+
+    <GotenList 
+        ref = {this.ref}
+    />
+
+    ...
+
+    addItemInList() {
+        this.ref.addList(<label>Component</label>)
+    }
+```
 
 ## Example of use
 
-### With buttonComponent
+``` jsx
+import React, { Component } from 'react'
+
+import { GotenList } from 'goten-react-list'
 
 
+const gotenListRef = 'gotenListRef'
 
-### Without buttonComponent
+export default class ExampleGotenList extends Component {
 
-
+    render() {
+        return (
+            <div>
+                <GotenList
+                    title='All components'
+                    actionsTitle='Actions actives'
+                    //onEdit={component => console.log(component)}
+                    onSearch={component => console.log(component)}
+                    ref={gotenListRef}
+                />
+                <div>
+                    <input
+                        type="submit"
+                        value="add item"
+                        onClick={_ => {
+                            this.refs[gotenListRef].addItem(
+                            <label>
+                                    Component
+                            </label>
+                            )
+                        }}
+                    />
+                </div>
+            </div>
+        )
+    }
+}
+```
 
 ## Props
 
 
+| Prop Name    | Type     | Default | Required | Description                                                            |
+|--------------|----------|---------|----------|------------------------------------------------------------------------|
+| onEdit       | Function |         | false    | This function is executed when the edit icon of the item is pressed.   |
+| onRemove     | Function |         | false    | This function is executed when the remove icon of the item is pressed. |
+| onSearch     | Function |         | false    | This function is executed when the search icon of the item is pressed. |
+| actionsTitle | String   |         | false    | Title of the actions fields                                            |
+| title        | String   |         | false    | Title of the components fields                                         |
 
 ## Methods
 
+- **addItem**
 
+This method recive an component and optionaly an object with the actions of the component. One time this method is executed, the component is added to the list. (**addItem(COMPONENT, OBJECT_OF_ACTIONS)**).
+
+- **addItemIteratively**
+
+This method recive an component, the number of iterations and optionaly an object with the actions of the component. One time this method is executed, the component is added to the list. (**addItemIteratively(COMPONENT, NUMBER_OF_ITERATION, OBJECT_OF_ACTIONS)**).
+
+- **removeItems**
+
+This method remove all items fo
 
 ## Contributions
 
