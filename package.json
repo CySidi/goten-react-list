@@ -1,13 +1,13 @@
 {
   "name": "goten-react-list",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "React component that facilitate the use of list and allow add items, actions and remove them.",
   "author": "Nicolas Meilan <sebastian.nicolas.meilan@gmail.com>",
   "main": "dist/index.js",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/CySidi/goten-react-list"
   },
   "scripts": {
     "test": "jest --coverage",
