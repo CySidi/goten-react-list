@@ -65,10 +65,10 @@ export class GotenList extends Component {
     }
     
     _removeItem = async (item) => {
-        if (this.props.onRemove)
-            this.props.onRemove()
-        else if (item.onRemove)
+        if (item.onRemove)
             item.onRemove()
+        else if (this.props.onRemove)
+            this.props.onRemove()
         this.setState(prevState => ({
             items: [...prevState.items.filter(prevItem => prevItem.key !== item.key)]
         }))

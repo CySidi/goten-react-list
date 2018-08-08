@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GotenList methods tests check add five items with addItemIteratively and with an action 1`] = `
+<div>
+  <link
+    crossOrigin="anonymous"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    rel="stylesheet"
+  />
+  <table
+    className="table table-striped table-condensed table-hover"
+  >
+    <thead>
+      <tr>
+        <th />
+        <th>
+          <label
+            className="actions"
+          />
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>
+          <item>
+            Component
+          </item>
+        </th>
+        <th>
+          <table
+            className="actions"
+          >
+            <tbody>
+              <tr>
+                <th />
+                <th>
+                  <button
+                    className="button-icon button-icon-default"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="glyphicon glyphicon-pencil"
+                    />
+                  </button>
+                </th>
+                <th>
+                  <button
+                    className="button-icon button-icon-default"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="glyphicon glyphicon-trash"
+                    />
+                  </button>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <item>
+            Component
+          </item>
+        </th>
+        <th>
+          <table
+            className="actions"
+          >
+            <tbody>
+              <tr>
+                <th />
+                <th>
+                  <button
+                    className="button-icon button-icon-default"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="glyphicon glyphicon-pencil"
+                    />
+                  </button>
+                </th>
+                <th>
+                  <button
+                    className="button-icon button-icon-default"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="glyphicon glyphicon-trash"
+                    />
+                  </button>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <item>
+            Component
+          </item>
+        </th>
+        <th>
+          <table
+            className="actions"
+          >
+            <tbody>
+              <tr>
+                <th />
+                <th>
+                  <button
+                    className="button-icon button-icon-default"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="glyphicon glyphicon-pencil"
+                    />
+                  </button>
+                </th>
+                <th>
+                  <button
+                    className="button-icon button-icon-default"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="glyphicon glyphicon-trash"
+                    />
+                  </button>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <item>
+            Component
+          </item>
+        </th>
+        <th>
+          <table
+            className="actions"
+          >
+            <tbody>
+              <tr>
+                <th />
+                <th>
+                  <button
+                    className="button-icon button-icon-default"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="glyphicon glyphicon-pencil"
+                    />
+                  </button>
+                </th>
+                <th>
+                  <button
+                    className="button-icon button-icon-default"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="glyphicon glyphicon-trash"
+                    />
+                  </button>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <item>
+            Component
+          </item>
+        </th>
+        <th>
+          <table
+            className="actions"
+          >
+            <tbody>
+              <tr>
+                <th />
+                <th>
+                  <button
+                    className="button-icon button-icon-default"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="glyphicon glyphicon-pencil"
+                    />
+                  </button>
+                </th>
+                <th>
+                  <button
+                    className="button-icon button-icon-default"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="glyphicon glyphicon-trash"
+                    />
+                  </button>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`GotenList methods tests check addItem with an action 1`] = `
+<div>
+  <link
+    crossOrigin="anonymous"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    rel="stylesheet"
+  />
+  <table
+    className="table table-striped table-condensed table-hover"
+  >
+    <thead>
+      <tr>
+        <th />
+        <th>
+          <label
+            className="actions"
+          />
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>
+          <item>
+            Component
+          </item>
+        </th>
+        <th>
+          <table
+            className="actions"
+          >
+            <tbody>
+              <tr>
+                <th />
+                <th>
+                  <button
+                    className="button-icon button-icon-default"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="glyphicon glyphicon-pencil"
+                    />
+                  </button>
+                </th>
+                <th>
+                  <button
+                    className="button-icon button-icon-default"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span
+                      className="glyphicon glyphicon-trash"
+                    />
+                  </button>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
