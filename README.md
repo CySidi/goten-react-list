@@ -99,7 +99,7 @@ This method recive an component, the number of iterations and optionaly an objec
 
 - **removeItems**
 
-This method remove all items fo
+This method remove all items of the list. (**removeItems()**).
 
 ## Contributions
 

@@ -2,20 +2,14 @@ import React, { Component } from 'react'
 
 import PropTypes from 'prop-types'
 
-import Table from 'react-bootstrap/lib/Table'
-import Glyphicon from 'react-bootstrap/lib/Glyphicon'
-import Button from 'react-bootstrap/lib/Button'
-
 import './gotenList.css'
 
-
-const bootstrapLink = <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossOrigin="anonymous" />
 
 const GotenListState = {
     items: []
 }
 
+ 
 export class GotenList extends Component {
     constructor(props){
         super(props)
@@ -45,24 +39,17 @@ export class GotenList extends Component {
     
     render(){
         return (
-            <div>
-                {bootstrapLink}
-                <Table striped condensed hover>
-                    <thead>
+                <table className='table table-striped table-condensed table-hover'>
+                    <thead className='table-thead'>
                         <tr>
-                            <th>{this.props.title}</th>
-                            <th>
-                                <label className='actions'>
-                                    {this.props.actionsTitle}
-                                </label>
-                            </th>
+                            <th className= 'title'>{this.props.title}</th>
+                            <th className='actionTitle'>{this.props.actionsTitle}</th>
                         </tr>
                     </thead>
                     <tbody>
                         {this._getItems()}
                     </tbody>
-                </Table>
-            </div>
+                </table>
         )
     }
     
@@ -84,12 +71,16 @@ export class GotenList extends Component {
         return (
             <th>
                 { logic &&
-                <Button
-                    bsClass='button-icon'
+                <button
                     onClick={_ => logic(item)}
+                    type='button'
+                    className='button-icon button-icon-default'
+                    disabled={false}
                 >
-                    <Glyphicon glyph={name} />
-                </Button>
+                    <span
+                        className={'glyphicon glyphicon-' + name}
+                    />
+                </button>
                 }
             </th>
         )

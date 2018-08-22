@@ -12,6 +12,7 @@ export default class ExampleGotenList extends Component {
     render() {
         return (
             <div className='example-goten-list'>
+                <div className='items-table'>
                 <GotenList
                     title='All components'
                     actionsTitle='Actions actives'
@@ -19,6 +20,7 @@ export default class ExampleGotenList extends Component {
                     onSearch={component => console.log(component)}
                     ref={gotenListRef}
                 />
+                </div>
                 <div className='buttons'>
                     <input
                         type="submit"
