@@ -20,8 +20,8 @@ describe('GotenList actions tests', () => {
         )
         const gotenListInstance = gotenList.getInstance()
         gotenListInstance.addItem(<item>Component</item>)
-        const editButton = gotenList.root.findAllByProps(button)
-            .filter(element => element.props.children.props.glyph == edit)[0]
+        const editButton = gotenList.root.findAllByProps(button).filter(
+            element => element.props.children.props.className.includes(edit))[0]
         editButton.props.onClick()
         expect(gotenListInstance.props.onSearch).toHaveBeenCalledTimes(0)
         expect(gotenListInstance.props.onRemove).toHaveBeenCalledTimes(0)
@@ -38,8 +38,8 @@ describe('GotenList actions tests', () => {
         )
         const gotenListInstance = gotenList.getInstance()
         gotenListInstance.addItem(<item>Component</item>)
-        const searchButton = gotenList.root.findAllByProps(button)
-            .filter(element => element.props.children.props.glyph == search)[0]
+        const searchButton = gotenList.root.findAllByProps(button).filter(
+            element => element.props.children.props.className.includes(search))[0]
         searchButton.props.onClick()
         expect(gotenListInstance.props.onEdit).toHaveBeenCalledTimes(0)
         expect(gotenListInstance.props.onRemove).toHaveBeenCalledTimes(0)
@@ -56,8 +56,8 @@ describe('GotenList actions tests', () => {
         )
         const gotenListInstance = gotenList.getInstance()
         gotenListInstance.addItem(<item>Component</item>)
-        const removeButton = gotenList.root.findAllByProps(button)
-            .filter(element => element.props.children.props.glyph == remove)[0]
+        const removeButton = gotenList.root.findAllByProps(button).filter(
+            element => element.props.children.props.className.includes(remove))[0]
         removeButton.props.onClick()
         expect(gotenListInstance.props.onEdit).toHaveBeenCalledTimes(0)
         expect(gotenListInstance.props.onSearch).toHaveBeenCalledTimes(0)
@@ -75,8 +75,8 @@ describe('GotenList actions tests', () => {
         )
         const gotenListInstance = gotenList.getInstance()
         gotenListInstance.addItem(<item>Component</item>, actions)
-        const editButton = gotenList.root.findAllByProps(button)
-            .filter(element => element.props.children.props.glyph == edit)[0]
+        const editButton = gotenList.root.findAllByProps(button).filter(
+            element => element.props.children.props.className.includes(edit))[0]
         editButton.props.onClick()
         expect(actions.onSearch).toHaveBeenCalledTimes(0)
         expect(actions.onRemove).toHaveBeenCalledTimes(0)
@@ -94,9 +94,9 @@ describe('GotenList actions tests', () => {
         )
         const gotenListInstance = gotenList.getInstance()
         gotenListInstance.addItem(<item>Component</item>, actions)
-        const editButton = gotenList.root.findAllByProps(button)
-            .filter(element => element.props.children.props.glyph == search)[0]
-        editButton.props.onClick()
+        const searchButton = gotenList.root.findAllByProps(button).filter(
+            element => element.props.children.props.className.includes(search))[0]
+        searchButton.props.onClick()
         expect(actions.onEdit).toHaveBeenCalledTimes(0)
         expect(actions.onRemove).toHaveBeenCalledTimes(0)
         expect(actions.onSearch).toHaveBeenCalledTimes(1)
@@ -113,9 +113,9 @@ describe('GotenList actions tests', () => {
         )
         const gotenListInstance = gotenList.getInstance()
         gotenListInstance.addItem(<item>Component</item>, actions)
-        const editButton = gotenList.root.findAllByProps(button)
-            .filter(element => element.props.children.props.glyph == remove)[0]
-        editButton.props.onClick()
+        const removeButton = gotenList.root.findAllByProps(button).filter(
+            element => element.props.children.props.className.includes(remove))[0]
+        removeButton.props.onClick()
         expect(actions.onEdit).toHaveBeenCalledTimes(0)
         expect(actions.onSearch).toHaveBeenCalledTimes(0)
         expect(actions.onRemove).toHaveBeenCalledTimes(1)
@@ -136,8 +136,8 @@ describe('GotenList actions tests', () => {
         )
         const gotenListInstance = gotenList.getInstance()
         gotenListInstance.addItem(<item>Component</item>, actions)
-        const editButton = gotenList.root.findAllByProps(button)
-            .filter(element => element.props.children.props.glyph == edit)[0]
+        const editButton = gotenList.root.findAllByProps(button).filter(
+            element => element.props.children.props.className.includes(edit))[0]
         editButton.props.onClick()
         expect(gotenListInstance.props.onSearch).toHaveBeenCalledTimes(0)
         expect(gotenListInstance.props.onRemove).toHaveBeenCalledTimes(0)
@@ -162,9 +162,9 @@ describe('GotenList actions tests', () => {
         )
         const gotenListInstance = gotenList.getInstance()
         gotenListInstance.addItem(<item>Component</item>, actions)
-        const editButton = gotenList.root.findAllByProps(button)
-            .filter(element => element.props.children.props.glyph == search)[0]
-        editButton.props.onClick()
+        const searchButton = gotenList.root.findAllByProps(button).filter(
+            element => element.props.children.props.className.includes(search))[0]
+        searchButton.props.onClick()
         expect(gotenListInstance.props.onEdit).toHaveBeenCalledTimes(0)
         expect(gotenListInstance.props.onRemove).toHaveBeenCalledTimes(0)
         expect(gotenListInstance.props.onSearch).toHaveBeenCalledTimes(0)
@@ -188,9 +188,9 @@ describe('GotenList actions tests', () => {
         )
         const gotenListInstance = gotenList.getInstance()
         gotenListInstance.addItem(<item>Component</item>, actions)
-        const editButton = gotenList.root.findAllByProps(button)
-            .filter(element => element.props.children.props.glyph == remove)[0]
-        editButton.props.onClick()
+        const removeButton = gotenList.root.findAllByProps(button).filter(
+            element => element.props.children.props.className.includes(remove))[0]
+        removeButton.props.onClick()
         expect(gotenListInstance.props.onEdit).toHaveBeenCalledTimes(0)
         expect(gotenListInstance.props.onSearch).toHaveBeenCalledTimes(0)
         expect(gotenListInstance.props.onRemove).toHaveBeenCalledTimes(0)

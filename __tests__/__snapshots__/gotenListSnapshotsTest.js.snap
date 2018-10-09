@@ -1,247 +1,317 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GotenList snapshots with all titles and actions 1`] = `
-<div>
-  <link
-    crossOrigin="anonymous"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    rel="stylesheet"
-  />
-  <table
-    className="table table-striped table-condensed table-hover"
+exports[`GotenList snapshots with actions colors 1`] = `
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="left"
+    className="table-thead"
   >
-    <thead>
-      <tr>
-        <th>
-          Title
-        </th>
-        <th>
-          <label
-            className="actions"
-          >
-            actionsTitle
-          </label>
-        </th>
-      </tr>
-    </thead>
-    <tbody />
-  </table>
-</div>
+    <tr>
+      <th />
+      <th
+        align="right"
+      />
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  />
+</table>
+`;
+
+exports[`GotenList snapshots with alignItems 1`] = `
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="center"
+    className="table-thead"
+  >
+    <tr>
+      <th>
+        Title
+      </th>
+      <th
+        align="right"
+      />
+    </tr>
+  </thead>
+  <tbody
+    align="center"
+  />
+</table>
+`;
+
+exports[`GotenList snapshots with all titles and actions 1`] = `
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="left"
+    className="table-thead"
+  >
+    <tr>
+      <th>
+        Title1
+      </th>
+      <th>
+        Title2
+      </th>
+      <th>
+        Title3
+      </th>
+      <th
+        align="right"
+      >
+        actionsTitle
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  />
+</table>
+`;
+
+exports[`GotenList snapshots with array title 1`] = `
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="left"
+    className="table-thead"
+  >
+    <tr>
+      <th>
+        Title1
+      </th>
+      <th>
+        Title2
+      </th>
+      <th>
+        Title3
+      </th>
+      <th
+        align="right"
+      />
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  />
+</table>
 `;
 
 exports[`GotenList snapshots with onEdit 1`] = `
-<div>
-  <link
-    crossOrigin="anonymous"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    rel="stylesheet"
-  />
-  <table
-    className="table table-striped table-condensed table-hover"
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="left"
+    className="table-thead"
   >
-    <thead>
-      <tr>
-        <th />
-        <th>
-          <label
-            className="actions"
-          />
-        </th>
-      </tr>
-    </thead>
-    <tbody />
-  </table>
-</div>
+    <tr>
+      <th />
+      <th
+        align="right"
+      />
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  />
+</table>
 `;
 
 exports[`GotenList snapshots with onEdit, onRemove and onSearch 1`] = `
-<div>
-  <link
-    crossOrigin="anonymous"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    rel="stylesheet"
-  />
-  <table
-    className="table table-striped table-condensed table-hover"
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="left"
+    className="table-thead"
   >
-    <thead>
-      <tr>
-        <th />
-        <th>
-          <label
-            className="actions"
-          />
-        </th>
-      </tr>
-    </thead>
-    <tbody />
-  </table>
-</div>
+    <tr>
+      <th />
+      <th
+        align="right"
+      />
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  />
+</table>
 `;
 
 exports[`GotenList snapshots with onRemove 1`] = `
-<div>
-  <link
-    crossOrigin="anonymous"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    rel="stylesheet"
-  />
-  <table
-    className="table table-striped table-condensed table-hover"
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="left"
+    className="table-thead"
   >
-    <thead>
-      <tr>
-        <th />
-        <th>
-          <label
-            className="actions"
-          />
-        </th>
-      </tr>
-    </thead>
-    <tbody />
-  </table>
-</div>
+    <tr>
+      <th />
+      <th
+        align="right"
+      />
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  />
+</table>
 `;
 
 exports[`GotenList snapshots with onSearch 1`] = `
-<div>
-  <link
-    crossOrigin="anonymous"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    rel="stylesheet"
-  />
-  <table
-    className="table table-striped table-condensed table-hover"
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="left"
+    className="table-thead"
   >
-    <thead>
-      <tr>
-        <th />
-        <th>
-          <label
-            className="actions"
-          />
-        </th>
-      </tr>
-    </thead>
-    <tbody />
-  </table>
-</div>
+    <tr>
+      <th />
+      <th
+        align="right"
+      />
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  />
+</table>
 `;
 
 exports[`GotenList snapshots with title and action 1`] = `
-<div>
-  <link
-    crossOrigin="anonymous"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    rel="stylesheet"
-  />
-  <table
-    className="table table-striped table-condensed table-hover"
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="left"
+    className="table-thead"
   >
-    <thead>
-      <tr>
-        <th>
-          Title
-        </th>
-        <th>
-          <label
-            className="actions"
-          >
-            Actions
-          </label>
-        </th>
-      </tr>
-    </thead>
-    <tbody />
-  </table>
-</div>
+    <tr>
+      <th>
+        Title
+      </th>
+      <th
+        align="right"
+      >
+        Actions
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  />
+</table>
+`;
+
+exports[`GotenList snapshots with width 1`] = `
+<table
+  className="table table-striped table-condensed table-hover"
+  width="50%"
+>
+  <thead
+    align="left"
+    className="table-thead"
+  >
+    <tr>
+      <th>
+        Title
+      </th>
+      <th
+        align="right"
+      />
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  />
+</table>
 `;
 
 exports[`GotenList snapshots without actions title 1`] = `
-<div>
-  <link
-    crossOrigin="anonymous"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    rel="stylesheet"
-  />
-  <table
-    className="table table-striped table-condensed table-hover"
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="left"
+    className="table-thead"
   >
-    <thead>
-      <tr>
-        <th>
-          Title
-        </th>
-        <th>
-          <label
-            className="actions"
-          />
-        </th>
-      </tr>
-    </thead>
-    <tbody />
-  </table>
-</div>
+    <tr>
+      <th>
+        Title
+      </th>
+      <th
+        align="right"
+      />
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  />
+</table>
 `;
 
 exports[`GotenList snapshots without title 1`] = `
-<div>
-  <link
-    crossOrigin="anonymous"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    rel="stylesheet"
-  />
-  <table
-    className="table table-striped table-condensed table-hover"
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="left"
+    className="table-thead"
   >
-    <thead>
-      <tr>
-        <th />
-        <th>
-          <label
-            className="actions"
-          >
-            Actions
-          </label>
-        </th>
-      </tr>
-    </thead>
-    <tbody />
-  </table>
-</div>
+    <tr>
+      <th />
+      <th
+        align="right"
+      >
+        Actions
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  />
+</table>
 `;
 
 exports[`GotenList snapshots without title and actions title 1`] = `
-<div>
-  <link
-    crossOrigin="anonymous"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    rel="stylesheet"
-  />
-  <table
-    className="table table-striped table-condensed table-hover"
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="left"
+    className="table-thead"
   >
-    <thead>
-      <tr>
-        <th />
-        <th>
-          <label
-            className="actions"
-          />
-        </th>
-      </tr>
-    </thead>
-    <tbody />
-  </table>
-</div>
+    <tr>
+      <th />
+      <th
+        align="right"
+      />
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  />
+</table>
 `;

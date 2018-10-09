@@ -54,7 +54,8 @@ export default class ExampleGotenList extends Component {
                     title='All components'
                     actionsTitle='Actions actives'
                     //onEdit={component => console.log(component)}
-                    onSearch={component => console.log(component)}
+                    onRemove={component => console.log(component)}
+                    removeItemColor={'red'}
                     ref={gotenListRef}
                 />
                 <div>
@@ -78,14 +79,20 @@ export default class ExampleGotenList extends Component {
 
 ## Props
 
-
-| Prop Name    | Type     | Default | Required | Description                                                            |
-|--------------|----------|---------|----------|------------------------------------------------------------------------|
-| onEdit       | Function |         | false    | This function is executed when the edit icon of the item is pressed.   |
-| onRemove     | Function |         | false    | This function is executed when the remove icon of the item is pressed. |
-| onSearch     | Function |         | false    | This function is executed when the search icon of the item is pressed. |
-| actionsTitle | String   |         | false    | Title of the actions fields                                            |
-| title        | String   |         | false    | Title of the components fields                                         |
+| Prop Name       	| Type         	| Default       	| Required 	| Description                                                            	|
+|-----------------	|--------------	|---------------	|----------	|------------------------------------------------------------------------	|
+| onRemove        	| Function     	|               	| false    	| This function is executed when the remove icon of the item is pressed. 	|
+| removeIconColor 	| String       	|  black        	| false    	| Color of the remove icon.                                              	|
+| onEdit          	| Function     	|               	| false    	| This function is executed when the edit icon of the item is pressed.   	|
+| editIconColor   	| String       	|  black        	| false    	| Color of the edit icon.                                                	|
+| onSearch        	| Function     	|               	| false    	| This function is executed when the search icon of the item is pressed. 	|
+| searchIconColor 	| String       	|  black        	| false    	| Color of the search icon.                                              	|
+| title           	| Array/String 	|               	| false    	| Title of the components fields.                                        	|
+| actionsTitle    	| String       	|               	| false    	| Title of the actions field.                                            	|
+| mergeColumns     	| boolean      	| false         	| false         	| Merge void columns.                                                    	|
+| alignItems      	| String       	|  left         	| false         	| Align of the colums.                                                   	|
+| width           	| String       	| 100%          	| false         	| Width of the table.                                                    	|
+| uniqueKey       	| String       	| GotenListKey_ 	| false         	| UniqueKey will be used for create all keys of the items in the table.  	|
 
 ## Methods
 

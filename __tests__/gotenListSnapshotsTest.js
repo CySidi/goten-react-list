@@ -41,6 +41,15 @@ describe('GotenList snapshots', () => {
         expect(tree).toMatchSnapshot()
     })
 
+    it('with array title', () => {
+        const tree = renderer.create(
+            <GotenList
+                title={['Title1', 'Title2', 'Title3']}
+            />
+        ).toJSON()
+        expect(tree).toMatchSnapshot()
+    })
+
     it('with onSearch', () => {
         const tree = renderer.create(
             <GotenList
@@ -82,7 +91,7 @@ describe('GotenList snapshots', () => {
     it('with all titles and actions', () => {
         const tree = renderer.create(
             <GotenList
-                title='Title'
+                title={['Title1', 'Title2', 'Title3']}
                 actionsTitle='actionsTitle'
                 onRemove={_ => null}
                 onSearch={_ => null}
@@ -91,4 +100,41 @@ describe('GotenList snapshots', () => {
         ).toJSON()
         expect(tree).toMatchSnapshot()
     })
+
+    it('with actions colors', () => {
+        const tree = renderer.create(
+            <GotenList
+                onRemove={_ => null}
+                onSearch={_ => null}
+                onEdit={_ => null}
+                removeIconColor='red'
+                searchIconColor='blue'
+                editIconColor='green'
+            />
+        ).toJSON()
+        expect(tree).toMatchSnapshot()
+    })
+
+    it('with width', () => {
+        const tree = renderer.create(
+            <GotenList
+                title='Title'
+                actionTitle='ActionTitle'
+                width='50%'
+            />
+        ).toJSON()
+        expect(tree).toMatchSnapshot()
+    })
+
+    it('with alignItems', () => {
+        const tree = renderer.create(
+            <GotenList
+                title='Title'
+                actionTitle='ActionTitle'
+                alignItems='center'
+            />
+        ).toJSON()
+        expect(tree).toMatchSnapshot()
+    })
+
 })
