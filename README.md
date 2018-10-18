@@ -55,7 +55,7 @@ export default class ExampleGotenList extends Component {
                     actionsTitle='Actions actives'
                     //onEdit={component => console.log(component)}
                     onRemove={component => console.log(component)}
-                    removeItemColor={'red'}
+                    removeIconColor={'red'}
                     ref={gotenListRef}
                 />
                 <div>
