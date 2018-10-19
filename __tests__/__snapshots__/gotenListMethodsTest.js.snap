@@ -381,6 +381,61 @@ exports[`GotenList methods tests check add five items with addItemIteratively an
 </table>
 `;
 
+exports[`GotenList methods tests check addItem with a Row component 1`] = `
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="left"
+    className="table-thead"
+  >
+    <tr>
+      <th>
+        column1
+      </th>
+      <th>
+        column2
+      </th>
+      <th
+        align="right"
+      />
+    </tr>
+  </thead>
+  <tbody
+    align="left"
+  >
+    <tr>
+      <td>
+        text from column1
+      </td>
+      <td>
+        text from column2
+      </td>
+      <td
+        align="right"
+      >
+        <button
+          className="button-icon button-icon-default"
+          disabled={false}
+          onClick={[Function]}
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          type="button"
+        >
+          <span
+            className="glyphicon glyphicon-trash"
+          />
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
 exports[`GotenList methods tests check addItem with an action 1`] = `
 <table
   className="table table-striped table-condensed table-hover"

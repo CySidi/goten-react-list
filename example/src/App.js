@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
 
-import ExampleGotenList from './exampleGotenList';
+import ExampleGotenList from './exampleGotenList'
+import ExampleGotenListRowComponent from './exampleGotenListRowComponent'
+
 
 class App extends Component {
   render() {
@@ -13,7 +15,14 @@ class App extends Component {
           <h1 className="App-title">GotenList Examples</h1>
         </header>
         <div className="App-body">
-          <ExampleGotenList/>
+            <div>
+                <h3>Example 1)</h3>
+                <ExampleGotenList/>
+            </div>
+            <div>
+                <h3>Example 2) (using Row components)</h3>
+                <ExampleGotenListRowComponent/>
+            </div>
         </div>
       </div>
     );
