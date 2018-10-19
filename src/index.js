@@ -61,13 +61,13 @@ export class GotenList extends Component {
                         className='table-thead'
                     >
                         <tr>
-                        {this._adjust(this._getTitle(this.props.title), this.keyValue + keyTitlesVoid, true) }
-                        <th 
-                            key={this.keyValue + keyActions}
-                            align={actionsAlign}
-                        >
-                            {this.props.actionsTitle}
-                        </th>
+                            {this._adjust(this._getTitle(this.props.title), this.keyValue + keyTitlesVoid, true) }
+                            <th 
+                                key={this.keyValue + keyActions}
+                                align={actionsAlign}
+                            >
+                                {this.props.actionsTitle}
+                            </th>
                         </tr>
                     </thead>
                     <tbody
@@ -151,11 +151,14 @@ export class GotenList extends Component {
 
     _getItems() {
         const actionsKey = '_actions'
-        return this.state.items.map( (item) => {
-            const components = this._getComponents(item.item, this.keyValue + item.key)
-            return (
+        return this.state.items.map((item) => 
                 <tr key={this.keyValue + item.key}>
-                    {this._adjust(components, this.keyValue + item.key)}
+                    { this.props.useComponentAsRow ? 
+                        item.item :
+                        this._adjust(
+                            this._getComponents(item.item, this.keyValue + item.key),
+                            this.keyValue + item.key)
+                    }
                     <td
                         align={actionsAlign}
                         key={this.keyValue + item.key + actionsKey}
@@ -164,7 +167,6 @@ export class GotenList extends Component {
                     </td>
                 </tr>
             )
-        })
     }
 
     _adjust(components, initialKey, title=false) {
@@ -215,5 +217,6 @@ GotenList.propTypes = {
         PropTypes.array
     ]),
     uniqueKey: PropTypes.string,
+    useComponentAsRow: PropTypes.bool,
     width: PropTypes.string
 }

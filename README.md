@@ -1,6 +1,10 @@
 # Goten List
 
-**Goten List** description.
+**Goten List** is a React component that helps avoid boilerplate when creating tables.
+
+- GotenList will control the items in its Table, so you can forget about managing certain lifecycle methods you would normally need.
+- GotenList provides an array of buttons, which you can customize and define functions for
+    - Currently, it shows inspect, edit, and delete buttons.
 
 ## Index
 
@@ -23,7 +27,6 @@ var GotenList = require('goten-react-list').GotenForm; // ES5
 import { GotenList } from 'goten-react-list'; // ES6
 
 ...
-
     <GotenList 
         ref = {this.ref}
     />
@@ -87,30 +90,30 @@ export default class ExampleGotenList extends Component {
 | editIconColor   	| String       	|  black        	| false    	| Color of the edit icon.                                                	|
 | onSearch        	| Function     	|               	| false    	| This function is executed when the search icon of the item is pressed. 	|
 | searchIconColor 	| String       	|  black        	| false    	| Color of the search icon.                                              	|
-| title           	| Array/String 	|               	| false    	| Title of the components fields.                                        	|
-| actionsTitle    	| String       	|               	| false    	| Title of the actions field.                                            	|
+| title           	| Array/String 	|               	| false    	| Title of the columns.                                        	|
+| actionsTitle    	| String       	|               	| false    	| Title of the actions column (the last one).                                            	|
 | mergeColumns     	| boolean      	| false         	| false         	| Merge void columns.                                                    	|
-| alignItems      	| String       	|  left         	| false         	| Align of the colums.                                                   	|
-| width           	| String       	| 100%          	| false         	| Width of the table.                                                    	|
+| alignItems      	| String       	|  left         	| false         	| Align prop of the table.                                                   	|
+| width           	| String       	| 100%          	| false         	| Width prop of the table.                                                    	|
 | uniqueKey       	| String       	| GotenListKey_ 	| false         	| UniqueKey will be used for create all keys of the items in the table.  	|
+| useComponentAsRow       	| Boolean       	| false 	| false         	| useComponentAsRow is used to pass a Component as a row. This component should render <td> only (no need to use <tr>), with whatever it is you want to render inside each column.  	|
 
 ## Methods
 
-- **addItem**
+- **addItem(COMPONENT, OBJECT_OF_ACTIONS)**
 
-This method recive an component and optionaly an object with the actions of the component. One time this method is executed, the component is added to the list. (**addItem(COMPONENT, OBJECT_OF_ACTIONS)**).
+This method receives a component or an array of components. You can also pass an object as a second parameter to define the action methods of the specific item (it overrides the ones passed to GotenList). Once this method is executed, the component is added to the list.
 
-- **addItemIteratively**
+- **addItemIteratively(COMPONENT, NUMBER_OF_ITERATION, OBJECT_OF_ACTIONS)**
 
-This method recive an component, the number of iterations and optionaly an object with the actions of the component. One time this method is executed, the component is added to the list. (**addItemIteratively(COMPONENT, NUMBER_OF_ITERATION, OBJECT_OF_ACTIONS)**).
+Same as **addItem**, but you can specify the number of iterations to add the component a certain amount of times.
 
 - **removeItems**
 
-This method remove all items of the list. (**removeItems()**).
+This method removes all items from the list. (**removeItems()**).
 
 ## Contributions
-
-To contribute to this package, we propose the following workflow:
-1. Add an issue with related tags to describe the contribution (is it a bug?, a feature request?).
-2. Branch your solution from develop, with the name as ```#<issue_number>_<descriptive_name>```.
+To contribute to this package, we use the following workflow:
+1. Add an issue with related tags to describe the contribution (is it a bug? a feature request?).
+2. Branch your solution from develop, naming it like `#<issue_number>-<descriptive_name>`.
 3. Send a pull request and wait for approval/corrections.
