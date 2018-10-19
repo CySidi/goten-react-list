@@ -1,7 +1,7 @@
 {
   "name": "goten-react-list",
   "version": "1.0.5",
-  "description": "React component that facilitate the use of list and allow add items, actions and remove them.",
+  "description": "React component that facilitates the use of tables, allowing to add and remove items with ease.",
   "author": "Nicolas Meilan <sebastian.nicolas.meilan@gmail.com>",
   "main": "dist/index.js",
   "license": "ISC",

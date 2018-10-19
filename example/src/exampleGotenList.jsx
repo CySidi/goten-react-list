@@ -8,7 +8,6 @@ import './exampleGotenList.css'
 const gotenListRef = 'gotenListRef'
 
 export default class ExampleGotenList extends Component {
-    
     render() {
         return (
             <div className='example-goten-list'>

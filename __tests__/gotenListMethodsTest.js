@@ -98,4 +98,24 @@ describe('GotenList methods tests', () => {
         component.getInstance().addItem([<item>Component1</item>, <item>Component2</item>])
         expect(component.root.findAllByType('item')).toHaveLength(2)
     })
+
+    it('check addItem with a Row component', () => {
+        const component = renderer.create(
+            <GotenList
+                useComponentAsRow
+                title={['column1', 'column2']}
+            />
+        )
+        component.getInstance().addItem(<React.Fragment>
+                <td>
+                    text from column1
+                </td>
+                <td>
+                    text from column2
+                </td>
+            </React.Fragment>
+        )
+        component.toJSON()
+        expect(component).toMatchSnapshot()
+    })
 })
