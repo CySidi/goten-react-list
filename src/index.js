@@ -128,7 +128,7 @@ export class GotenList extends Component {
             item.onRemove(item.item)
             this._removeItem(item)
         } : _ => {
-            this.props.onRemove(item)
+            this.props.onRemove(item.item)
             this._removeItem(item)
         }
         return (
