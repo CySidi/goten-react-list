@@ -4,6 +4,7 @@ import './App.css'
 
 import ExampleGotenList from './exampleGotenList'
 import ExampleGotenListRowComponent from './exampleGotenListRowComponent'
+import ExampleGotenOwnButtonComponents from './exampleGotenOwnButtonComponents'
 
 
 class App extends Component {
@@ -22,6 +23,10 @@ class App extends Component {
             <div>
                 <h3>Example 2) (using Row components)</h3>
                 <ExampleGotenListRowComponent/>
+            </div>
+            <div>
+                <h3>Example 3) (using own button components)</h3>
+                <ExampleGotenOwnButtonComponents/>
             </div>
         </div>
       </div>

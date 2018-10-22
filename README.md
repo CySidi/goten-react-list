@@ -40,12 +40,22 @@ import { GotenList } from 'goten-react-list'; // ES6
 
 ## Example of use
 
-``` jsx
+```jsx
 import React, { Component } from 'react'
 
 import { GotenList } from 'goten-react-list'
 
 
+export class MyButtonComponent extends Component {
+    render() {
+        return (
+            <React.Fragment>
+                <button onClick={this.props.onClick}>{this.props.children}</button>
+                ...other stuff like modals, images, etc.
+            </React.Fragment>
+        )
+    }
+}
 const gotenListRef = 'gotenListRef'
 
 export default class ExampleGotenList extends Component {
@@ -59,6 +69,10 @@ export default class ExampleGotenList extends Component {
                     //onEdit={component => console.log(component)}
                     onRemove={component => console.log(component)}
                     removeIconColor={'red'}
+                    customRemoveButton={MyButtonComponent}
+                    /* You can also do,
+                    customRemoveButton={(gotenListProps) => <MyButtonComponent {...gotenListProps}/>}
+                    */
                     ref={gotenListRef}
                 />
                 <div>
@@ -86,10 +100,13 @@ export default class ExampleGotenList extends Component {
 |-----------------	|--------------	|---------------	|----------	|------------------------------------------------------------------------	|
 | onRemove        	| Function     	|               	| false    	| This function is executed when the remove icon of the item is pressed. 	|
 | removeIconColor 	| String       	|  black        	| false    	| Color of the remove icon.                                              	|
+| customRemoveButton 	| Component       	|  undefined        	| false    	| Component to use instead of the default remove button. See the example to learn how to use it. |
 | onEdit          	| Function     	|               	| false    	| This function is executed when the edit icon of the item is pressed.   	|
 | editIconColor   	| String       	|  black        	| false    	| Color of the edit icon.                                                	|
+| customEditButton 	| Component       	|  undefined        	| false    	| Component to use instead of the default edit button. See the example to learn how to use it. |
 | onSearch        	| Function     	|               	| false    	| This function is executed when the search icon of the item is pressed. 	|
 | searchIconColor 	| String       	|  black        	| false    	| Color of the search icon.                                              	|
+| customSearchButton 	| Component       	|  undefined        	| false    	| Component to use instead of the default search button. See the example to learn how to use it. |
 | title           	| Array/String 	|               	| false    	| Title of the columns.                                        	|
 | actionsTitle    	| String       	|               	| false    	| Title of the actions column (the last one).                                            	|
 | mergeColumns     	| boolean      	| false         	| false         	| Merge void columns.                                                    	|
