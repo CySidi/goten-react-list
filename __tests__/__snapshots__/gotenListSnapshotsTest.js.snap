@@ -108,6 +108,60 @@ exports[`GotenList snapshots with array title 1`] = `
 </table>
 `;
 
+exports[`GotenList snapshots with customButtons 1`] = `
+<table
+  className="table table-striped table-condensed table-hover"
+  width="100%"
+>
+  <thead
+    align="center"
+    className="table-thead"
+  >
+    <tr>
+      <th>
+        Title
+      </th>
+      <th
+        align="right"
+      />
+    </tr>
+  </thead>
+  <tbody
+    align="center"
+  >
+    <tr>
+      <td>
+        <td>
+          text from column1
+        </td>
+        <td>
+          text from column2
+        </td>
+      </td>
+      <td
+        align="right"
+      >
+        <button
+          onClick={[Function]}
+        >
+          MyButtonSearch
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          MyButtonEdit
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          MyButtonRemove
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
 exports[`GotenList snapshots with onEdit 1`] = `
 <table
   className="table table-striped table-condensed table-hover"
