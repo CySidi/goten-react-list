@@ -24,7 +24,7 @@ export class GotenList extends Component {
     }
 
     removeItems() {
-        this.setState({items:[]})
+        this.setState({items: []})
     }
 
     addItem(item, actions) {
@@ -103,48 +103,52 @@ export class GotenList extends Component {
             ))
     }
 
-    _getOneAction(item, logic, color, name) {
+    _getOneAction(item, logic, color, name, Component = "button") {
         return (
             <React.Fragment>
                 { logic &&
-                <button
-                    onClick={_ => logic(item)}
-                    type='button'
-                    className='button-icon button-icon-default'
-                    style={{color:color}}
-                    disabled={false}
-                >
-                    <span
-                        className={'glyphicon glyphicon-' + name}
-                    />
-                </button>
+                    <Component
+                        onClick={_ => logic(item)}
+                        type='button'
+                        className='button-icon button-icon-default'
+                        style={{color:color}}
+                        disabled={false}
+                    >
+                        <span
+                            className={'glyphicon glyphicon-' + name}
+                        />
+                    </Component>
                 }
             </React.Fragment>
         )
     }
 
     _getActions(item) {
-        const onRemove = item.onRemove ? _ => {
+        const onRemoveItemMethod = item.onRemove ? _ => {
             item.onRemove(item.item)
             this._removeItem(item)
-        } : _ => {
+        } : undefined
+        const onRemovePropMethod = this.props.onRemove ? _ => {
             this.props.onRemove(item.item)
             this._removeItem(item)
-        }
+        } : undefined
         return (
             <React.Fragment>
                 { this._getOneAction(item.item, 
-                    item.onSearch ? item.onSearch : this.props.onSearch, 
+                    item.onSearch || this.props.onSearch, 
                     item.searchIconColor ? item.searchIconColor : this.props.searchIconColor,
-                    'search')}
+                    'search',
+                    this.props.customSearchButton)}
                 { this._getOneAction(item.item,
-                    item.onEdit ? item.onEdit : this.props.onEdit, 
+                    item.onEdit || this.props.onEdit, 
                     item.editIconColor ? item.editIconColor : this.props.editIconColor,
-                    'pencil')}
+                    'pencil',
+                    this.props.customEditButton)}
                 { this._getOneAction(item.item, 
-                    onRemove,
+                    onRemoveItemMethod || onRemovePropMethod,
                     item.removeIconColor ? item.removeIconColor : this.props.removeIconColor,
-                    'trash')}
+                    'trash',
+                    this.props.customRemoveButton)}
             </React.Fragment>
         )
     }
@@ -152,39 +156,21 @@ export class GotenList extends Component {
     _getItems() {
         const actionsKey = '_actions'
         return this.state.items.map((item) => 
-<<<<<<< HEAD
-            this.props.useComponentAsRow 
-                ? <tr key={this.keyValue + item.key}>
-                    {item.item}
-                    <td
-                        align={actionsAlign}
-                        key={this.keyValue + item.key + actionsKey}
-                    >
-                        { this._getActions(item) }
-                    </td>
-                </tr>
-                : <tr key={this.keyValue + item.key}>
-                    {this._adjust(
+            <tr key={this.keyValue + item.key}>
+                { this.props.useComponentAsRow ? 
+                    item.item :
+                    this._adjust(
                         this._getComponents(item.item, this.keyValue + item.key),
-                        this.keyValue + item.key
-                    )}
-=======
-                <tr key={this.keyValue + item.key}>
-                    { this.props.useComponentAsRow ? 
-                        item.item :
-                        this._adjust(
-                            this._getComponents(item.item, this.keyValue + item.key),
-                            this.keyValue + item.key)
-                    }
->>>>>>> 6e603d3329cfe7e83b4df1a6f63a44a010417056
-                    <td
-                        align={actionsAlign}
-                        key={this.keyValue + item.key + actionsKey}
-                    >
-                        { this._getActions(item) }
-                    </td>
-                </tr>
-            )
+                        this.keyValue + item.key)
+                }
+                <td
+                    align={actionsAlign}
+                    key={this.keyValue + item.key + actionsKey}
+                >
+                    { this._getActions(item) }
+                </td>
+            </tr>
+        )
     }
 
     _adjust(components, initialKey, title=false) {
@@ -236,5 +222,8 @@ GotenList.propTypes = {
     ]),
     uniqueKey: PropTypes.string,
     useComponentAsRow: PropTypes.bool,
-    width: PropTypes.string
+    width: PropTypes.string,
+    customEditButton: PropTypes.func,
+    customRemoveButton: PropTypes.func,
+    customSearchButton: PropTypes.func
 }

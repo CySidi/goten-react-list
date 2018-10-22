@@ -1,6 +1,6 @@
 {
   "name": "goten-react-list",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React component that facilitates the use of tables, allowing to add and remove items with ease.",
   "author": "Nicolas Meilan <sebastian.nicolas.meilan@gmail.com>",
   "main": "dist/index.js",
@@ -54,5 +54,8 @@
     "react",
     "react component",
     "item list"
-  ]
+  ],
+  "dependencies": {
+    "react-bootstrap": "^0.32.4"
+  }
 }

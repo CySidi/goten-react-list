@@ -137,4 +137,31 @@ describe('GotenList snapshots', () => {
         expect(tree).toMatchSnapshot()
     })
 
+    it('with customButtons', () => {
+        const customButton = (props, type) => <button onClick={props.onClick}>{`MyButton${type}`}</button>
+        const component = renderer.create(
+            <GotenList
+                title='Title'
+                actionTitle='ActionTitle'
+                alignItems='center'
+                onEdit={_ => null}
+                onRemove={_ => null}
+                onSearch={_ => null}
+                customRemoveButton={(gotenListProps) => customButton(gotenListProps, "Remove")}
+                customSearchButton={(gotenListProps) => customButton(gotenListProps, "Search")}
+                customEditButton={(gotenListProps) => customButton(gotenListProps, "Edit")}
+            />
+        )
+        component.getInstance().addItem(<React.Fragment>
+            <td>
+                text from column1
+            </td>
+            <td>
+                text from column2
+            </td>
+        </React.Fragment>
+        )
+        component.toJSON()
+        expect(component).toMatchSnapshot()
+    })
 })

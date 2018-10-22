@@ -27,23 +27,7 @@ exports[`GotenList methods tests check add five items with addItem and show its 
       </td>
       <td
         align="right"
-      >
-        <button
-          className="button-icon button-icon-default"
-          disabled={false}
-          onClick={[Function]}
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-trash"
-          />
-        </button>
-      </td>
+      />
     </tr>
     <tr>
       <td>
@@ -53,23 +37,7 @@ exports[`GotenList methods tests check add five items with addItem and show its 
       </td>
       <td
         align="right"
-      >
-        <button
-          className="button-icon button-icon-default"
-          disabled={false}
-          onClick={[Function]}
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-trash"
-          />
-        </button>
-      </td>
+      />
     </tr>
     <tr>
       <td>
@@ -79,23 +47,7 @@ exports[`GotenList methods tests check add five items with addItem and show its 
       </td>
       <td
         align="right"
-      >
-        <button
-          className="button-icon button-icon-default"
-          disabled={false}
-          onClick={[Function]}
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-trash"
-          />
-        </button>
-      </td>
+      />
     </tr>
     <tr>
       <td>
@@ -105,23 +57,7 @@ exports[`GotenList methods tests check add five items with addItem and show its 
       </td>
       <td
         align="right"
-      >
-        <button
-          className="button-icon button-icon-default"
-          disabled={false}
-          onClick={[Function]}
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-trash"
-          />
-        </button>
-      </td>
+      />
     </tr>
     <tr>
       <td>
@@ -131,23 +67,7 @@ exports[`GotenList methods tests check add five items with addItem and show its 
       </td>
       <td
         align="right"
-      >
-        <button
-          className="button-icon button-icon-default"
-          disabled={false}
-          onClick={[Function]}
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-trash"
-          />
-        </button>
-      </td>
+      />
     </tr>
   </tbody>
 </table>
@@ -196,6 +116,17 @@ exports[`GotenList methods tests check add five items with addItemIteratively an
             className="glyphicon glyphicon-pencil"
           />
         </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <item>
+          Component
+        </item>
+      </td>
+      <td
+        align="right"
+      >
         <button
           className="button-icon button-icon-default"
           disabled={false}
@@ -208,7 +139,7 @@ exports[`GotenList methods tests check add five items with addItemIteratively an
           type="button"
         >
           <span
-            className="glyphicon glyphicon-trash"
+            className="glyphicon glyphicon-pencil"
           />
         </button>
       </td>
@@ -237,21 +168,6 @@ exports[`GotenList methods tests check add five items with addItemIteratively an
             className="glyphicon glyphicon-pencil"
           />
         </button>
-        <button
-          className="button-icon button-icon-default"
-          disabled={false}
-          onClick={[Function]}
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-trash"
-          />
-        </button>
       </td>
     </tr>
     <tr>
@@ -278,21 +194,6 @@ exports[`GotenList methods tests check add five items with addItemIteratively an
             className="glyphicon glyphicon-pencil"
           />
         </button>
-        <button
-          className="button-icon button-icon-default"
-          disabled={false}
-          onClick={[Function]}
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-trash"
-          />
-        </button>
       </td>
     </tr>
     <tr>
@@ -317,62 +218,6 @@ exports[`GotenList methods tests check add five items with addItemIteratively an
         >
           <span
             className="glyphicon glyphicon-pencil"
-          />
-        </button>
-        <button
-          className="button-icon button-icon-default"
-          disabled={false}
-          onClick={[Function]}
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-trash"
-          />
-        </button>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <item>
-          Component
-        </item>
-      </td>
-      <td
-        align="right"
-      >
-        <button
-          className="button-icon button-icon-default"
-          disabled={false}
-          onClick={[Function]}
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-pencil"
-          />
-        </button>
-        <button
-          className="button-icon button-icon-default"
-          disabled={false}
-          onClick={[Function]}
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-trash"
           />
         </button>
       </td>
@@ -414,23 +259,7 @@ exports[`GotenList methods tests check addItem with a Row component 1`] = `
       </td>
       <td
         align="right"
-      >
-        <button
-          className="button-icon button-icon-default"
-          disabled={false}
-          onClick={[Function]}
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-trash"
-          />
-        </button>
-      </td>
+      />
     </tr>
   </tbody>
 </table>
@@ -477,21 +306,6 @@ exports[`GotenList methods tests check addItem with an action 1`] = `
         >
           <span
             className="glyphicon glyphicon-pencil"
-          />
-        </button>
-        <button
-          className="button-icon button-icon-default"
-          disabled={false}
-          onClick={[Function]}
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          type="button"
-        >
-          <span
-            className="glyphicon glyphicon-trash"
           />
         </button>
       </td>
