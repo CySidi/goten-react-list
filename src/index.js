@@ -152,6 +152,7 @@ export class GotenList extends Component {
     _getItems() {
         const actionsKey = '_actions'
         return this.state.items.map((item) => 
+<<<<<<< HEAD
             this.props.useComponentAsRow 
                 ? <tr key={this.keyValue + item.key}>
                     {item.item}
@@ -167,6 +168,15 @@ export class GotenList extends Component {
                         this._getComponents(item.item, this.keyValue + item.key),
                         this.keyValue + item.key
                     )}
+=======
+                <tr key={this.keyValue + item.key}>
+                    { this.props.useComponentAsRow ? 
+                        item.item :
+                        this._adjust(
+                            this._getComponents(item.item, this.keyValue + item.key),
+                            this.keyValue + item.key)
+                    }
+>>>>>>> 6e603d3329cfe7e83b4df1a6f63a44a010417056
                     <td
                         align={actionsAlign}
                         key={this.keyValue + item.key + actionsKey}
@@ -225,5 +235,6 @@ GotenList.propTypes = {
         PropTypes.array
     ]),
     uniqueKey: PropTypes.string,
+    useComponentAsRow: PropTypes.bool,
     width: PropTypes.string
 }

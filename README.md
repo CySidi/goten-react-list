@@ -93,10 +93,10 @@ export default class ExampleGotenList extends Component {
 | title           	| Array/String 	|               	| false    	| Title of the columns.                                        	|
 | actionsTitle    	| String       	|               	| false    	| Title of the actions column (the last one).                                            	|
 | mergeColumns     	| boolean      	| false         	| false         	| Merge void columns.                                                    	|
-| alignItems      	| String       	|  left         	| false         	| Align prop ofjk the table.                                                   	|
-| width           	| String       	| 100%          	| false         	| Width prop of the table.                                                    	|
+| alignItems      	| String       	|  left         	| false         	| Align prop for the table.                                                   	|
+| width           	| String       	| 100%          	| false         	| Width prop for the table.                                                    	|
 | uniqueKey       	| String       	| GotenListKey_ 	| false         	| UniqueKey will be used for create all keys of the items in the table.  	|
-| useComponentAsRow       	| Boolean       	| false 	| false         	| useComponentAsRow is used to pass a Component as a row. This component should render <td> only (no need to use <tr>), with whatever it is you want to render inside each column.  	|
+| useComponentAsRow       	| Boolean       	| false 	| false         	| useComponentAsRow is used to pass a Component as a row. This component should render "td"s only (no need to use "tr"), with whatever it is you want to render inside each column. You can use React.Fragment to encapsulate these "td"s.  	|
 
 ## Methods
 
@@ -106,11 +106,11 @@ This method receives a component or an array of components. You can also pass an
 
 - **addItemIteratively(COMPONENT, NUMBER_OF_ITERATION, OBJECT_OF_ACTIONS)**
 
-Same as **addItem**, but you can specify the number of iterations to add the component to the list a certain amount of times.
+Same as **addItem**, but you can specify the number of iterations to add the component a certain amount of times.
 
 - **removeItems**
 
-This method removes all items of the list. (**removeItems()**).
+This method removes all items from the list. (**removeItems()**).
 
 ## Contributions
 To contribute to this package, we use the following workflow:
